@@ -9,6 +9,8 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	max-height: 100vh;
+	overflow: hidden;
 }
 
 /* Dark mode looking scrollbar */
