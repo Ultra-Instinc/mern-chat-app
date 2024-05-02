@@ -31,9 +31,9 @@ export default function SignUp() {
 				stiffness: 700,
 				damping: 30,
 			}}
-			className=' backdrop-filter backdrop-blur-lg bg-clip-padding p-6 bg-opacity-0 w-full flex items-center justify-center rounded-lg max-w-96 mx-auto flex-col'>
+			className=' backdrop-filter backdrop-blur-md bg-clip-padding p-6 bg-opacity-10 w-full flex items-center justify-center rounded-lg max-w-96 mx-auto flex-col bg-red-500'>
 			<h1 className='text-3xl font-semibold text-center text-gray-300'>
-				Sign Up <span className='text-[#CCBA84]'>ChatApp</span>
+				Sign Up <span className='text-[#CCBA84]'>Tickets.co</span>
 			</h1>
 			<form
 				onSubmit={handleSubmit}

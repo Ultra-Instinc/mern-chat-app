@@ -2,7 +2,6 @@ import React from "react";
 import Conversation from "./Conversation";
 import useGetConversations from "../../hooks/useGetConversations";
 import { getRandomEmoji } from "../../utils/emojis";
-import { AnimatePresence } from "framer-motion";
 
 const Conversations = () => {
 	const { loading, conversations } = useGetConversations();

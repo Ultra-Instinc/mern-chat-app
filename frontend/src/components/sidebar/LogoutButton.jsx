@@ -9,7 +9,7 @@ export default function LogoutButton() {
 			onClick={logout}
 			className='mt-auto'>
 			{!loading ? (
-				<BiLogOut className='size-6 text-white cursor-pointer ' />
+				<BiLogOut className='size-6 text-white cursor-pointer' />
 			) : (
 				<span className='loading loading-spinner'></span>
 			)}

@@ -3,11 +3,6 @@ import { createContext, useContext, useState } from "react";
 // initialize the context
 export const AuthContext = createContext();
 
-export const useAuthContext = () => {
-	return useContext(AuthContext);
-};
-
-// allow context values to be accessable in the app
 export const AuthContextProvider = ({ children }) => {
 	const [authUser, setAuthUser] = useState(
 		JSON.parse(localStorage.getItem("chat-user")) || null
@@ -17,4 +12,8 @@ export const AuthContextProvider = ({ children }) => {
 			{children}
 		</AuthContext.Provider>
 	);
+};
+// allow context values to be accessable in the app
+export const useAuthContext = () => {
+	return useContext(AuthContext);
 };
